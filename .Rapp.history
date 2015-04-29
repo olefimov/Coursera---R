@@ -1,0 +1,300 @@
+airquality[good]
+airquality[good,]
+airquality[good,][1:6]
+airquality[good,][1:6,]
+x<-c(1.4,-.5,NA,0.6)
+x
+x[1]
+is.na(x)
+x[is.na(x)]
+y<-x[!is.na(x)]
+y
+y[y>0]
+?data.frame
+x<-c("OS","Lee","Mu")
+y<-c(10,20,25)
+df<-data.frame(x,y)
+df
+df<-data.frame(y,x)
+df
+z<-c("TT","WW","YY")
+data.frame(x,y,z)
+x<-1:10
+data.frame(x,y,z)
+x<=4L
+x<-4L
+class(x)
+x<-c(4,"a",TRUE)
+class(c)
+class(x)
+x<-c(1,3,5)
+y<-c(3,2,10)
+rbind(x,y)
+x<-list(2,"a","b",TRUE)
+x[[1]]
+class(x[[1]])
+x<-1:4
+y<-2
+x+y
+x <- c(17, 14, 4, 5, 13, 12, 10)
+x[x>=11]<-4
+x
+gwd()
+pwd()
+cwd()
+getwd()
+?load()
+?table
+?read.table
+list.files()
+x<-read.table("hw1_data.csv")
+x<-read.csv("hw1_data.csv")
+x
+x(1:2)
+x[1:2]
+x[,1:2]
+x[1:2,]
+length(x)
+dim(x)
+x[152:153,]
+x[47,]
+x$Ozone
+is.na(x$Ozone)
+sum(!is.na(x$Ozone))
+sum(is.na(x$Ozone))
+y<-x[!is.na(x)]
+y
+y<-x$Ozone(!is.na(x))
+y<-x$Ozone[!is.na(x)]
+y
+x$Ozone
+y<-x$Ozone
+y
+z<-y[!NA]
+z
+z<-y[is.na(y)]
+z
+z<-y[!is.na(y)]
+z
+mean(z)
+mean(y[!is.na(y)])
+mean(x$Ozone[!is.na(x$Ozone)])
+r<-x[x$Ozone>31 & x$Temp>90]
+r<-x[x$Ozone>31]
+r<-(x$Ozone>31)
+r
+r<-x$Ozone>31
+r
+r<-x$Ozone
+r
+x
+r<-x[x$Ozone]
+r<-x[$Ozone]
+r<-x[Ozone>31]
+r<-x[$Ozone>31]
+r<-x[1>31]
+r
+x
+x[1]
+x[1,]
+r<-x[1,]
+r
+r<-x[($Ozone>31),]
+r<-x[(Ozone>31),]
+r<-x[(,$Ozone>31]
+r<-x[,$Ozone>31]
+r<-x[,Ozone>31]
+r<-x[,1]
+r
+nrow(x)
+x$Ozone
+x[x$Ozone,]
+x
+x[1]
+x[Ozone]
+x[$Ozone]
+x$Ozone>31
+x[x$Ozone>31]
+x[x$Ozone>31,]
+x
+x[x$Ozone>31 & x$Temp>91,]
+is.na(x[x$Ozone>31 & x$Temp>91,])
+x[!is.na(x[x$Ozone>31 & x$Temp>91,),]
+x[!is.na(x[x$Ozone>31 & x$Temp>91,]),]
+is.na(x[x$Ozone>31 & x$Temp>91,])
+!is.na(x[x$Ozone>31 & x$Temp>91,])
+x[x$Ozone>31 & x$Temp>91,]
+complete.cases(x[x$Ozone>31 & x$Temp>91,])
+complete.cases(x[x$Ozone>31 & x$Temp>91,],)
+x[x$Ozone>31 & x$Temp>91,]
+na.omit(x[x$Ozone>31 & x$Temp>91,])
+mean(na.omit(x[x$Ozone>31 & x$Temp>91,])$Solar.R)
+mean(na.omit(x[x$Ozone>31 & x$Temp>90,])$Solar.R)
+mean(na.omit(x[x$Month==6,])$Temp)
+x[x$Month==6,]
+nrow(x[x$Month==6,])
+na.omit(x[x$Month==6,])
+mean(x[x$Month==6,]$Temp)
+x[x$Month==5,]
+na.omit(x[x$Month==5,])
+?max
+max(na.omit(x[x$Month==5,])$Ozone)
+?deviance
+mad_libs <- function(...){#
+  # Do your argument unpacking here!#
+  args<-list(...)#
+  place<-args[["place"]]#
+  adjective<-args[["adjective"]]#
+  noun<-args[["noun"]]#
+  # Don't modify any code below this comment.#
+  # Notice the variables you'll need to create in order for the code below to#
+  # be functional!#
+  paste("News from", place, "today where", adjective, "students took to the streets in protest of the new", noun, "being installed on campus.")#
+}
+mad_libs(place="Moscow",adjective="on",noun="kill")
+which
+?which
+which(LETTERS=="R")
+which(LETTERS=="S")
+which(LETTERS=="F")
+which(LETTERS=="s")
+which(LETTERS=="S")
+?seq_len
+rbinom(1,1,0.5)
+rbinom(1,5,0.5)
+rbinom(3,5,0.5)
+rbinom(6,5,0.5)
+rbinom(6,20,0.5)
+le-8
+flags
+Flags
+ls()
+mad_libs
+dir()
+require(stats)
+stats
+groups <- as.factor(rbinom(32, n = 5, prob = 0.4))
+groups
+tapply(groups, groups, length)
+tapply(warpbreaks$breaks, warpbreaks[,-1], sum)
+warpbreaks
+warpbreaks[,-1]
+warpbreaks[,1]
+warpbreaks[,-1]
+tapply(warpbreaks$breaks, warpbreaks, sum)
+tapply(warpbreaks$breaks, warpbreaks[, 3, drop = FALSE], sum)
+tapply(warpbreaks$breaks, warpbreaks[, 3], sum)
+tapply(warpbreaks$breaks, warpbreaks[, 2], sum)
+ind <- list(c(1, 2, 2), c("A", "A", "B"))
+table(ind)
+ind
+tapply(1:3, ind)
+tapply(1:3, ind,sum)
+ls()
+x
+sample(x,10)
+sample(x,1)
+sample(x,3)
+x
+require(graphics)
+sum(dbinom(46:54, 100, 0.5))
+n <- 2000
+k <- seq(0, n, by = 20)
+plot (k, dbinom(k, n, pi/10, log = TRUE), type = "l", ylab = "log density",#
+      main = "dbinom(*, log=TRUE) is better than  log(dbinom(*))")
+lines(k, log(dbinom(k, n, pi/10)), col = "red", lwd = 2)
+plot (k, dbinom(k, n, pi/10, log = TRUE), type = "l", ylab = "log density",#
+      main = "dbinom(*, log=TRUE) is better than  log(dbinom(*))")#
+lines(k, log(dbinom(k, n, pi/10)), col = "red", lwd = 2)
+mtext("dbinom(k, log=TRUE)", adj = 0)#
+mtext("extended range", adj = 0, line = -1, font = 4)#
+mtext("log(dbinom(k))", col = "red", adj = 1)
+require(graphics)#
+#
+dnorm(0) == 1/sqrt(2*pi)#
+dnorm(1) == exp(-1/2)/sqrt(2*pi)#
+dnorm(1) == 1/sqrt(2*pi*exp(1))#
+#
+## Using "log = TRUE" for an extended range :#
+par(mfrow = c(2,1))#
+plot(function(x) dnorm(x, log = TRUE), -60, 50,#
+     main = "log { Normal density }")#
+curve(log(dnorm(x)), add = TRUE, col = "red", lwd = 2)#
+mtext("dnorm(x, log=TRUE)", adj = 0)#
+mtext("log(dnorm(x))", col = "red", adj = 1)
+require(graphics)#
+#
+dnorm(0) == 1/sqrt(2*pi)#
+dnorm(1) == exp(-1/2)/sqrt(2*pi)#
+dnorm(1) == 1/sqrt(2*pi*exp(1))#
+#
+## Using "log = TRUE" for an extended range :#
+par(mfrow = c(2,1))#
+plot(function(x) dnorm(x, log = TRUE), -60, 50,#
+     main = "log { Normal density }")#
+curve(log(dnorm(x)), add = TRUE, col = "red", lwd = 2)#
+mtext("dnorm(x, log=TRUE)", adj = 0)#
+mtext("log(dnorm(x))", col = "red", adj = 1)#
+#
+plot(function(x) pnorm(x, log.p = TRUE), -50, 10,#
+     main = "log { Normal Cumulative }")#
+curve(log(pnorm(x)), add = TRUE, col = "red", lwd = 2)#
+mtext("pnorm(x, log=TRUE)", adj = 0)#
+mtext("log(pnorm(x))", col = "red", adj = 1)#
+#
+## if you want the so-called 'error function'#
+erf <- function(x) 2 * pnorm(x * sqrt(2)) - 1#
+## (see Abramowitz and Stegun 29.2.29)#
+## and the so-called 'complementary error function'#
+erfc <- function(x) 2 * pnorm(x * sqrt(2), lower = FALSE)#
+## and the inverses#
+erfinv <- function (x) qnorm((1 + x)/2)/sqrt(2)#
+erfcinv <- function (x) qnorm(x/2, lower = FALSE)/sqrt(2)
+z<-3
+aaa<-function(x,y) {}
+aaa<-function(x,y) {
+x+y/z
+}
+aaa(1,2)
+aaa<-function(x,y) {
+x+y/rrr
+}
+aaa(1,2)
+f<-function(x) {
+g<-function(y) {
+y+z
+}
+z<4
+x+g(x)
+}
+z<-10
+f(3)
+f<-function(x) {
+z<4
+z<-4
+x+g(x)
+g<-function(y) {
+y+z }
+}
+z<-10
+f(3)
+ls()
+z
+x<-5
+y<-if(x<3) {NA} else {10}
+y
+debug(ls)
+debug(lm)
+lm(y-x)
+n
+n
+n
+n
+n
+n
+n
+n
+n
+n
+q
+x
